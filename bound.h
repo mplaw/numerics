@@ -21,7 +21,7 @@
 
 	Example use:
 		bound<double> b(5.0, 1.0, 10.0);
-		b += 10.0; // b = (1.0, 10.0, 10.0)			Notice that value is capped at maximum (and is not 15.0 as it otherwise would be).
+		b += 10.0; // b = (1.0, 10.0, 10.0) Notice that value is capped at maximum (and is not 15.0 as it otherwise would be).
 		b == 10.0; // true (as value = 10.0)
 
 	Can be used with any type that supports arithmetic and comparisons, e.g. bound<int>, bound<float>, bound<MyCustomType>.
@@ -144,24 +144,26 @@ template <class T> bound<T> operator* (bound<T> lhs, const bound<T> & rhs) { lhs
 template <class T> bound<T> operator/ (bound<T> lhs, const bound<T> & rhs) { lhs /= rhs; return lhs; }
 
 template <class T> std::ostream& operator << (std::ostream& os, const bound<T>& a) { a.print(os); return os; }
+
+// expects input in the form of : val, min, max
 template <class T> std::istream& operator >> (std::istream& in, bound<T>& b) {
 	T x, y, z;
 
-	// read x
+	// read in value
 	in >> x;
-	b.set_min(x);
+	b.set(x);
 
 	// skip delimiter
 	in.ignore(2);
 
-	// read y
+	// read minimum
 	in >> y;
-	b.set(y);
+	b.set_min(y);
 
 	// skip delimiter
 	in.ignore(2);
 
-	// read z
+	// read in maximum
 	in >> z;
 	b.set_max(z);
 
