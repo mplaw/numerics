@@ -1,8 +1,5 @@
 #pragma once
 
-#include "unit.h"
-#include "macros_default.h"
-
 /*
 	To do:
 		- enforce STRICT_UNITS flag
@@ -11,10 +8,13 @@
 		- negation operator
 */
 
+#include "unit.h"
+//#include "macros_default.h"
+
 // Flags
 
 #define STRICT_UNITS		1		// Arguments of logs, powers and trigonometric functions must be unitless.
-#define KILL_UNITS			1		// Remove all unit calculations and checks, thus speeding up the program.
+#define KILL_UNITS		1		// Remove all unit calculations and checks, thus speeding up the program.
 #define KILL_UNCERTAINTY	0		// Remove all uncertainty calculations, thus speeding up the program.
 
 // Macros
