@@ -64,16 +64,16 @@ public:
 	const T& get_min() const { return min; }
 	const T& get_max() const { return max; }
 
-	void set	(const T &new_val) { val = new_val; check(); }
+	void set    (const T &new_val) { val = new_val; check(); }
 	void set_min(const T &new_min) { min = new_min; check(); }
 	void set_max(const T &new_max) { max = new_max; check(); }
 	void set_all(const T &new_val, const T &new_min, const T &new_max) { val = new_val; min = new_min; max = new_max; check(); }
 
 	// Type casts 
 
-	int			to_int   () const { return (int   )val; }
-	float		to_float () const { return (float )val; }
-	double		to_double() const { return (double)val; }
+	int	to_int   () const { return (int   )val; }
+	float	to_float () const { return (float )val; }
+	double  to_double() const { return (double)val; }
 	std::string to_string() const { return std::to_string(val); }
 
 	operator int   () const { return (int   )val; }
