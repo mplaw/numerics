@@ -1,8 +1,8 @@
-# numerics
+# Numerics
 
 Author : Matt Law
 
-A simple set of number-like classes.
+A personal C++ library, which currently contains the following files (of interest)
 
   bound     : a number that's bound between a minimum and a maximum (min <= num <= max)
   
