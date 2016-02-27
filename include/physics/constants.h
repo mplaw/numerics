@@ -9,18 +9,18 @@ namespace constant {
 	// Unitless 
 	//--------------------------------------------------------------------------------
 
-	const T two_pi				  = 6.283185307;				// 360
-	const T three_over_2_pi	= 4.71238898;				  // 270
-	const T pi					    = 3.14159265359;			// 180
-	const T pi_over_two			= 1.570796327;				// 90
-	const T pi_over_four		= 0.785398163;				// 45
+	const T two_pi		= 6.283185307;				// 360
+	const T three_over_2_pi	= 4.71238898;				// 270
+	const T pi		= 3.14159265359;			// 180
+	const T pi_over_two	= 1.570796327;				// 90
+	const T pi_over_four	= 0.785398163;				// 45
 
-	const T euler				    = 2.71828182845904523536028747135266249775724709369995;
+	const T euler		= 2.71828182845904523536028747135266249775724709369995;
 
-	const T ln					    = std::log(10euler;
-	const T ln_inverse			= 1 / std::log(euler);
-	const T log10				    = std::log(10);
-	const T log10_inverse		= 1 / std::log(10);
+	const T ln		= std::log(10euler;
+	const T ln_inverse	= 1 / std::log(euler);
+	const T log10		= std::log(10);
+	const T log10_inverse	= 1 / std::log(10);
 
 	// Physical		: http://physics.nist.gov/cuu/Constants/
 	//--------------------------------------------------------------------------------
