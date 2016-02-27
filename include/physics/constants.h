@@ -17,7 +17,7 @@ namespace constant {
 
 	const T euler		= 2.71828182845904523536028747135266249775724709369995;
 
-	const T ln		= std::log(10euler;
+	const T ln		= std::log(euler);
 	const T ln_inverse	= 1 / std::log(euler);
 	const T log10		= std::log(10);
 	const T log10_inverse	= 1 / std::log(10);
