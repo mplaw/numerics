@@ -62,7 +62,7 @@
 	#define LT(x, y) assert((x) <  (y))
 	#define GT(x, y) assert((x) >  (y))
 	#define LE(x, y) assert((x) <= (y))
-	#define GE(x, y) assert((x) <= (y))
+	#define GE(x, y) assert((x) >= (y))
 	#define ADD(x) x
 	#define REM(x)
 	#define LOG(x) std::cout <<  __FILE__ << ":" << __LINE__  << (x) << std::endl;
