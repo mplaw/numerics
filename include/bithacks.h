@@ -30,7 +30,6 @@
 // FLAG					VALUE		//	EFFECT			|	DESCRIPTION
 #define BIT_HACKING		1			//	NOT IMPLEMENTED	|	Turns off all bit hacks.
 #define CHAR_BIT		8			//	Tune some funcs	|	CHAR_BIT is the number of bits per byte (normally 8).
-#define SYSTEM_BITS		32			// 
 #define FLAG_REGISTERS	0			//	speed			|	Avoid branching on CPUs with flag registers (IA32).								sign01, sign101	
 #define R_SHIFT			0			// (quickest)		|	One less instruction (but not portable).										sign01, sign101	
 #define NO_INT_OVERFLOW_EXCEPTION 1 // ++speed			|	
