@@ -32,7 +32,7 @@
 #define CHAR_BIT		8			//	Tune some funcs	|	CHAR_BIT is the number of bits per byte (normally 8).
 #define FLAG_REGISTERS	0			//	speed			|	Avoid branching on CPUs with flag registers (IA32).								sign01, sign101	
 #define R_SHIFT			0			// (quickest)		|	One less instruction (but not portable).										sign01, sign101	
-#define NO_INT_OVERFLOW_EXCEPTION 1 // ++speed			|	
+#define NO_INT_OVERFLOW_EXCEPTION 1 // ++speed				
 #define POWER_OF_2_0	0			// ++speed			|	if 1, zero is incorrectly considered a power of 2
 #define NOT_SAME_MEM	1			// ++speed			|	Guarantee that arguments a and b do not point to the same memory location.
 
