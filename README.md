@@ -1,6 +1,7 @@
 # Numerics
 
 A small library of basic data types and helpful functions/macros, which are primarily aimed towards numerical computation.
+Currently the helper functions/macros are very unfinished. On the otherhand, the basic data types are finished. 
 ## Data types
 ```
     bound     : a number that's bound between a minimum and a maximum (min <= num <= max)
@@ -13,13 +14,15 @@ A small library of basic data types and helpful functions/macros, which are prim
     
     unit      : a physical compound unit, e.g. kg m^3 s^-1.
 ```
-## Helpful functions/macros
+## Helpful functions/macros (unfinished)
 ```
     constants : a list of mathematical and physical constants (as number objects).
     
     macros    : debug and compiler-independent optimisations macros.
     
     typedefs  : small set of standard typedefs used throughout the other files.
+    
+    bithacks  : a collection of bit twiddling functions, that may speed up specific operations.
 ```
 
 
